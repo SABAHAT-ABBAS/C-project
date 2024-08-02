@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Animal Adoption Simulator</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header class="header">
+        <h1>ANIMAL ADOPTION CENTER</h1>
+        <h5>"ADOPT DONT SHOP"</h5>
+    </header>
+
+    <!-- Task Bar -->
+    <div class="task-bar">
+        <ul>
+            <li><a href="#" class="task-link" data-category="all">HOME</a></li>
+            <li><a href="#" class="task-link" data-category="dogs">DOGS</a></li>
+            <li><a href="#" class="task-link" data-category="cats">CATS</a></li>
+            <li><a href="#" class="task-link" data-category="rabbits">RABBITS</a></li>
+            <li><a href="#" class="task-link" data-category="parrots">PARROTS</a></li>
+            <li><a href="#" class="task-link" data-category="happy">HAPPY TAILS</a></li>
+        </ul>
+    </div>
+    <main>
+        <h2>Choose a Pet to Adopt:</h2>
+        <!-- Pet gallery -->
+        <div class="pet-gallery">
+            <!-- Dogs Section -->
+            <section id="dogsSection" class="category-section" style="display: none;">
+                <h2>Dogs:</h2>
+                <div class="pet-card" data-category="dogs">
+                    <img src="pet1.jpg" alt="Pet 1">
+                    <h3>Dog 1</h3>
+                    <h3>Dorgi dog</h3>
+                    <button class="adopt-button" data-pet="pet1">Adopt</button>
+                    
+                </div>
+                <div class="pet-card" data-category="dogs">
+                    <img src="pet7.webp" alt="Pet 7">
+                    <h3>Dog 2</h3>
+                    <h3>golden retriever</h3>
+                    <button class="adopt-button" data-pet="pet7">Adopt</button>
+                </div>
+                <div class="pet-card" data-category="dogs">
+                    <img src="pet6.jpg" alt="Pet 6">
+                    <h3>Dog 3</h3>
+                    <h3>Maltese dog</h3>
+                    <button class="adopt-button" data-pet="pet7">Adopt</button>
+                </div>
+            </section>
+            
+            <!-- Cats Section -->
+            <section id="catsSection" class="category-section" style="display: none;">
+                <h2>Cats:</h2>
+                <div class="pet-card" data-category="cats">
+                    <img src="pet2.jpg" alt="Pet 2">
+                    <h3>Cat 1</h3>
+                    <h3>persian cat</h3>
+                    <button class="adopt-button" data-pet="pet2">Adopt</button>
+                </div>
+                <div class="pet-card" data-category="cats">
+                    <img src="pet3.jpg" alt="Pet 3">
+                    <h3>Cat 2</h3>
+                    <h3>Ginger cat</h3>
+                    <button class="adopt-button" data-pet="pet3">Adopt</button>
+                </div>
+                <div class="pet-card" data-category="cats">
+                    <img src="images.jpg" alt="Pet 3">
+                    <h3>Cat 3</h3>
+                    <h3>Munchkin cat breed</h3>
+                    <button class="adopt-button" data-pet="pet4">Adopt</button>
+                </div>
+            </section>
+
+            <!-- Rabbits Section -->
+            <section id="rabbitsSection" class="category-section" style="display: none;">
+                <h2>Rabbits:</h2>
+                <div class="pet-card" data-category="rabbits">
+                    <img src="pet4.jpg" alt="Pet 4">
+                    <h3>Bunny 1</h3>
+                    <h3>Panon rabbit</h3>
+                    <button class="adopt-button" data-pet="pet1">Adopt</button>
+                </div>
+                <div class="pet-card" data-category="rabbits">
+                    <img src="pet8.jpg" alt="Pet 8">
+                    <h3>Bunny 2</h3>
+                    <h3>New Zealand rabbit</h3>
+                    <button class="adopt-button" data-pet="pet8">Adopt</button>
+                </div>
+                <div class="pet-card" data-category="rabbits">
+                    <img src="download.jpg" alt="Pet 9">
+                    <h3>bunny 3</h3>
+                    <h3>twin bunnies</h3>
+                    <button class="adopt-button" data-pet="pet9">Adopt</button>
+                </div>
+            </section>
+
+            <!-- Parrots Section -->
+            <section id="parrotsSection" class="category-section" style="display: none;">
+                <h2>Parrots:</h2>
+                <div class="pet-card" data-category="parrots">
+                    <img src="pet5.jpg" alt="Pet 12">
+                    <h3>Parrot 1</h3>
+                    <h3>Budgerigar parrot</h3>
+                    <button class="adopt-button" data-pet="pet12">Adopt</button>
+                </div>
+                <div class="pet-card" data-category="parrots">
+                    <img src="pet10.jpg" alt="Pet 10">
+                    <h3>Parrot 2</h3>
+                    <h3>Pastel Parrotlets</h3>
+                    <button class="adopt-button" data-pet="pet10">Adopt</button>
+                </div>
+                <div class="pet-card" data-category="parrots">
+                    <img src="pet 11.jpg" alt="Pet 11">
+                    <h3>Parrot 3</h3>
+                    <h3>Macaw parrot</h3>
+                    <button class="adopt-button" data-pet="pet1">Adopt</button>
+                </div>
+            </section>
+        </div>
+        <section id="happySection" class="slideshow-container">
+            <h2>OUR HAPPY TAILS:</h2>
+            <!-- Slideshow images -->
+            <div class="slideshow-content">
+                <div class="mySlides fade">
+                    <img src="happy1.jpg" alt="happy1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="happy2.jpg" alt="happy2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="happy3.jpg" alt="happy3">
+                </div>
+                <div class="mySlides fade">
+                    <img src="happy4.jpg" alt="happy4">
+                </div>
+                <div class="mySlides fade">
+                    <img src="happy5.jpg" alt="happy4">
+                </div>
+                <div class="mySlides fade">
+                    <img src="happy6.jpg" alt="happy4">
+                </div>
+                <div class="mySlides fade">
+                    <img src="happy7.jpg" alt="happy4">
+                </div>
+                <div class="mySlides fade">
+                    <img src="happy8.jpg" alt="happy4">
+                </div>
+                <div class="mySlides fade">
+                    <img src="happy9.jpg" alt="happy4">
+                </div>
+
+            </div>
+        </section>
+        <section id="aboutUsSection">
+            <h2>ABOUT US:</h2>
+        <p>Hello,
+         Welcome to the webpage of our pet adoption center, our motive is to provide all the stray animals a home 
+        and to make this real we started this organization to help people adobt pets</p>
+    </section>
+
+        <!-- Adoption Form Modal -->
+        <div id="adoptionModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Adoption Form</h2>
+                <form id="adoptionForm">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" required><br><br>
+                    <input type="submit" id="submitBtn" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cute Animal Adoption Simulator</p>
+    </footer>
+    <script src="project.js"></script>
+</body>
+</html>
