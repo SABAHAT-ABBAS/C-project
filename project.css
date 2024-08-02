@@ -1,0 +1,285 @@
+/* Basic styles for header, nav, main, footer */
+.header {
+    background-image: url('back9.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire header with the background image */
+    background-position: center; /* Center the background image */
+    color: black; /* Text color for better visibility */
+    text-emphasis-color:black;
+    text-align: center; /* Center align the text */
+    padding: 50px; /* Add padding to the header */
+    width: auto;
+    height: 900px;
+    margin: 70px;
+}
+
+
+h1 {
+    text-size-adjust: 30px;
+    text-overflow: initial;
+    text-decoration: wavy;
+    font-family: cursive;
+    font-size: 90px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-decoration-color: black;
+    text-wrap: wrap;
+ color:black;
+    
+}
+
+h3 {
+    text-emphasis-color: white;
+    text-decoration: antiquewhite;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+h2 {
+    text-decoration: solid;
+    text-decoration: underline;
+    font-family: cursive , sans-serif;
+    font-size: 60px;
+    text-align: center;
+
+}
+h5{
+    font-size: 50px;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:#737c8f;
+}
+
+header, footer {
+    background-color: #bccce4;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+/* Pet gallery styles */
+.pet-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.pet-card {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    background-color :gray;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: dotted black;
+    display: inline-block; /* Display cards in inline-block */
+    width: calc(25% - 20px); /* Set width for each card */
+    margin-bottom: 20px; /* Add margin between cards */
+}
+
+.pet-card {
+    display: inline-block; /* Display cards in inline-block */
+    width: calc(25% - 20px); /* Set width for each card */
+    margin-bottom: 20px; /* Add margin between cards */
+}
+.pet-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: solid  black;
+}
+.pet-card:hover {
+    transform: translateY(-30px); /* Add hover effect */
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Congratulations message styles */
+.congratulations-message {
+    background-color: #7eb6ff;
+    color: white;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 15px;
+    text-align: center;
+    height: 100px;
+    width: 500px;
+    align-self: center;
+    font-size: 35px;
+    position: fixed;
+     top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 40px;
+    border: 5px solid #000000;
+    z-index: 9999;
+}
+
+/* Task bar styles */
+.task-bar {
+    background-color:  #7a7b7c;
+    padding: 10px 0;
+    text-align: center;
+    text-size-adjust: 100px;
+}
+
+.task-bar ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: solid;
+    text-size-adjust: 100px;
+}
+
+.task-bar ul li {
+    display: inline;
+    margin-right: 20px;
+    text-size-adjust: 100px;
+    text-decoration: solid;
+    margin-right: 20px
+
+}
+
+.task-bar ul li a {
+    text-decoration: none;
+    color: black;
+    text-size-adjust: 100px;
+    font-size: 30px;
+    margin-right: 20px
+}
+.task-bar ul li:last-child {
+    margin-right: 0; /* Remove the right margin from the last task bar link */
+}
+
+/* Additional CSS for layout modification */
+.pet-gallery {
+    display: flex;
+    flex-direction: column; /* Display categories in a column */
+}
+
+/* Additional CSS for layout modification */
+.category-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+    gap: 20px; /* Add gap between items */
+}
+
+
+
+/* Ensure proper spacing between pet cards */
+@media screen and (max-width: 768px) {
+    .pet-card {
+        flex-basis: 100%;
+    }
+}
+.adopt-button {
+font-size: 30px;
+padding: 10px;
+border-radius: 5px;
+}
+#adoptionForm input[type="text"],
+#adoptionForm input[type="email"],
+#adoptionForm input[type="tel"] ,
+#adoptionForm input[type="submit"] 
+
+{
+    width: 300px; /* You can adjust the width as per your requirement */
+    height: 60px;
+    padding: 8px; /* Optional: Adding some padding for better aesthetics */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    align-items: center;
+    align-self: center;
+}
+/* CSS to center the adoption form */
+.modal-content {
+    margin: 150px; /* This centers the modal content */
+    width: 50%; /* Adjust the width as needed */
+    text-align: center; /* Centers the text within the modal content */
+}
+p{
+    font-size: 40px;
+}
+#submitBtn{
+    width: 200px;
+    height: auto;
+    color: #000000;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 1000px; /* Set the width */
+    height: 900px; /* Set the height */
+    margin: 0 auto; /* Center the slideshow */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Position the slides */
+   
+}
+
+/* Slideshow images */
+.slideshow-container img {
+    width: 100%; /* Make images fill their container */
+    height: 100%; /* Make images fill their container */
+    object-fit: cover; /* Maintain aspect ratio */
+   
+}
+
+/* Hide all slides by default */
+.mySlides {
+    border-radius: 6px;
+    border:solid  #000000;
+    display: none;
+    width: 900px; /* Set the width */
+    height: 650px;
+}
